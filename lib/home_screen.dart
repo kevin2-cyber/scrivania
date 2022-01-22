@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:to_do_app/welcome.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -18,7 +19,7 @@ class Home extends StatelessWidget {
           ),
         ),
         child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
+          filter: ImageFilter.blur(sigmaX: 4.0, sigmaY: 4.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -38,10 +39,17 @@ class Home extends StatelessWidget {
                   fontWeight: FontWeight.w800,
                 ),
               ),
+              const SizedBox(
+                height: 500.0,
+              ),
               MaterialButton(
                 height: 50.0,
                 minWidth: 200.0,
-                onPressed: (){},
+                onPressed: (){
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const Welcome()));
+                },
                 shape: const StadiumBorder(),
                 color: Colors.red,
                 child: const Text('Get Started'),
