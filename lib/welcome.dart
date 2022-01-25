@@ -9,7 +9,7 @@ class Welcome extends StatelessWidget {
       body: Container(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        color: Colors.red,
+        color: Colors.blue.shade100,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
