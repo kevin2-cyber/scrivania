@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:to_do_app/constants.dart';
+import 'package:to_do_app/edit_todo.dart';
 // import 'package:google_fonts/google_fonts.dart';
 
 class Welcome extends StatelessWidget {
@@ -25,7 +27,7 @@ class Welcome extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10.0),
                         color: Colors.black26,
                       ),
-                      height: 50.0,
+                      height: 45.0,
                       // width: 4.0,
                       child: IconButton(
                         onPressed: (){
@@ -47,8 +49,8 @@ class Welcome extends StatelessWidget {
                         borderRadius: BorderRadius.circular(10.0),
                         color: Colors.black26
                       ),
-                      height: 50.0,
-                      width: 50.0,
+                      height: 45.0,
+                      // width: 50.0,
                       child: IconButton(
                         onPressed: (){},
                         icon: const Icon(
@@ -60,12 +62,28 @@ class Welcome extends StatelessWidget {
                   ),
                 ],
               ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              Text(
+                  'Hello World',
+                style: GoogleFonts.poppins(
+                  textStyle: const TextStyle(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 20.0,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){},
+        onPressed: (){
+          Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context)=> const EditScreen()));
+        },
         tooltip: 'Add To do',
         backgroundColor: Colors.grey,
         child: const Icon(
