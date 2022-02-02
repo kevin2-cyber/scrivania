@@ -59,7 +59,13 @@ class Home extends StatelessWidget {
                 color: Colors.red,
                 child: Text(
                     'Get Started',
-                  style: GoogleFonts.poppins(),
+                  style: GoogleFonts.poppins(
+                    textStyle: const TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.white,
+                    ),
+                  ),
                 ),
               ),
             ],
