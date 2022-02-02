@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:to_do_app/welcome.dart';
 
 class Home extends StatelessWidget {
@@ -23,20 +24,24 @@ class Home extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              const Text(
+              Text(
                 'Note It',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 60.0,
-                  fontWeight: FontWeight.w800,
+                style: GoogleFonts.poppins(
+                  textStyle: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 60.0,
+                    fontWeight: FontWeight.w800,
+                  ),
                 ),
               ),
-              const Text(
+              Text(
                 'A SAMPLE TO DO APPLICATION',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.w800,
+                style: GoogleFonts.poppins(
+                  textStyle: const TextStyle(
+                    color: Colors.black,
+                    fontSize: 20.0,
+                    fontWeight: FontWeight.w800,
+                  ),
                 ),
               ),
               const SizedBox(
@@ -52,7 +57,10 @@ class Home extends StatelessWidget {
                 },
                 shape: const StadiumBorder(),
                 color: Colors.red,
-                child: const Text('Get Started'),
+                child: Text(
+                    'Get Started',
+                  style: GoogleFonts.poppins(),
+                ),
               ),
             ],
           ),
