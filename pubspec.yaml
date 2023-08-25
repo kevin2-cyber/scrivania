@@ -19,8 +19,11 @@ dependencies:
   firebase_auth: ^4.7.1
   firebase_core: ^2.15.0
   flutter_svg: ^2.0.7
+  drift_sqflite: ^2.0.1
 
 dev_dependencies:
+  drift_dev: ^2.11.0
+  build_runner: ^2.4.6
   flutter_test:
     sdk: flutter
 
