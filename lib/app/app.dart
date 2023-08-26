@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scrivania/presentation/home.dart';
+import 'package:scrivania/app/presentation/home.dart';
 
 class Scrivania extends StatelessWidget {
   const Scrivania({super.key});
