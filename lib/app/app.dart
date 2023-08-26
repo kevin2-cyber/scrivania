@@ -8,6 +8,7 @@ class Scrivania extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      title: 'Scrivania',
       theme: ThemeData.light(
         useMaterial3: true
       ),
