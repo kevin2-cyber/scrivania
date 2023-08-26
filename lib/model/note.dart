@@ -1,5 +1,6 @@
+import 'package:drift/drift.dart';
 
-class Note {
+class Note extends Table {
   int id;
   String title;
   String details;

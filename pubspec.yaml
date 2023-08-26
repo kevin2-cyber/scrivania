@@ -20,7 +20,9 @@ dependencies:
   firebase_core: ^2.15.0
   cloud_firestore: ^4.8.4
   flutter_svg: ^2.0.7
-  drift_sqflite: ^2.0.1
+  #  drift_sqflite: ^2.0.1
+  drift: ^2.11.0
+  sqlite3_flutter_libs: ^0.5.0
 
 dev_dependencies:
   drift_dev: ^2.11.0

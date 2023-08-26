@@ -234,7 +234,7 @@ packages:
     source: hosted
     version: "2.3.2"
   drift:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: drift
       sha256: a255df2476431d3179f5aba7a7435a3678542642fba43de98c330ae0e0393c2e
@@ -249,14 +249,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.11.0"
-  drift_sqflite:
-    dependency: "direct main"
-    description:
-      name: drift_sqflite
-      sha256: dd1afbd72555b7a72ebf053926078d8c302059af4f1eb22040fc27a056429acb
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.1"
   fake_async:
     dependency: transitive
     description:
@@ -677,22 +669,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
-  sqflite:
-    dependency: transitive
-    description:
-      name: sqflite
-      sha256: "591f1602816e9c31377d5f008c2d9ef7b8aca8941c3f89cc5fd9d84da0c38a9a"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.3.0"
-  sqflite_common:
-    dependency: transitive
-    description:
-      name: sqflite_common
-      sha256: "1b92f368f44b0dee2425bb861cfa17b6f6cf3961f762ff6f941d20b33355660a"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.5.0"
   sqlite3:
     dependency: transitive
     description:
@@ -701,6 +677,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.0"
+  sqlite3_flutter_libs:
+    dependency: "direct main"
+    description:
+      name: sqlite3_flutter_libs
+      sha256: "1e20a88d5c7ae8400e009f38ddbe8b001800a6dffa37832481a86a219bc904c7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.15"
   sqlparser:
     dependency: transitive
     description:
@@ -741,14 +725,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
-  synchronized:
-    dependency: transitive
-    description:
-      name: synchronized
-      sha256: "5fcbd27688af6082f5abd611af56ee575342c30e87541d0245f7ff99faa02c60"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.1.0"
   term_glyph:
     dependency: transitive
     description:
