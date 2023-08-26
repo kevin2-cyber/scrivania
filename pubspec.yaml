@@ -18,6 +18,7 @@ dependencies:
   google_fonts: ^5.1.0
   firebase_auth: ^4.7.1
   firebase_core: ^2.15.0
+  cloud_firestore: ^4.8.4
   flutter_svg: ^2.0.7
   drift_sqflite: ^2.0.1
 

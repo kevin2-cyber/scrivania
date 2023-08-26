@@ -1,2 +1,4 @@
 
-class Constants {}
+class Constants {
+  static const String user = "users";
+}
