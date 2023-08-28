@@ -14,7 +14,9 @@ class Note extends Table {
   TextColumn get content => text().named('body')();
 }
 
-@DriftDatabase(tables: [Note])
+@DriftDatabase(
+  include: {'tables.drift'},
+)
 class NoteDatabase extends _$NoteDatabase {
 
   NoteDatabase() : super(_openConnection());
