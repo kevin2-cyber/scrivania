@@ -7,11 +7,11 @@ import 'package:path/path.dart' as p;
 
 part 'note.g.dart';
 
-@DataClassName('Note')
+@DataClassName('note')
 class Note extends Table {
-  ColumnBuilder<int> get id => integer().autoIncrement();
-  ColumnBuilder<String> get title => text().withLength(min: 6, max: 32);
-  ColumnBuilder<String> get content => text().named('body');
+  IntColumn get id => integer().autoIncrement()();
+  TextColumn get title => text().withLength(min: 6, max: 32)();
+  TextColumn get content => text().named('body')();
 }
 
 @DriftDatabase(tables: [Note])
