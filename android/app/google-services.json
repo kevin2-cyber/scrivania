@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "931802754694",
+    "project_id": "scrivania-d453f",
+    "storage_bucket": "scrivania-d453f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931802754694:android:190222a620008d22fe2b07",
+        "android_client_info": {
+          "package_name": "com.kimikevin.scrivania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931802754694-4orch32bs15k61ief085esgmj40qrg7t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJM_1hXlCQ2lgQHkkfG2wBSNEqwR9E0UE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931802754694-4orch32bs15k61ief085esgmj40qrg7t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

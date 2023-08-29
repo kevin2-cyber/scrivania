@@ -1,7 +1,6 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.to_do_app">
-   <application
-        android:label="Note_It"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application
+        android:label="scrivania"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

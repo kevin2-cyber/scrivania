@@ -4,7 +4,30 @@
 # This file should be version controlled and should not be manually edited.
 
 version:
-  revision: ffaf66883be8b50bf4215c798af98264d65e6820
-  channel: master
+  revision: "ea005219394211bea4c2b87011699c63cfabb115"
+  channel: "main"
 
 project_type: app
+
+# Tracks metadata for the flutter migrate command
+migration:
+  platforms:
+    - platform: root
+      create_revision: ea005219394211bea4c2b87011699c63cfabb115
+      base_revision: ea005219394211bea4c2b87011699c63cfabb115
+    - platform: android
+      create_revision: ea005219394211bea4c2b87011699c63cfabb115
+      base_revision: ea005219394211bea4c2b87011699c63cfabb115
+    - platform: ios
+      create_revision: ea005219394211bea4c2b87011699c63cfabb115
+      base_revision: ea005219394211bea4c2b87011699c63cfabb115
+
+  # User provided section
+
+  # List of Local paths (relative to this file) that should be
+  # ignored by the migrate tool.
+  #
+  # Files that are not part of the templates will be ignored by default.
+  unmanaged_files:
+    - 'lib/main.dart'
+    - 'ios/Runner.xcodeproj/project.pbxproj'
