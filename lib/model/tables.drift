@@ -1,6 +1,0 @@
-
-CREATE TABLE note (
-    id INT NOT NULL PRIMARY KEY AUTOINCREMENT,
-    title TEXT,
-    content TEXT,
-);
