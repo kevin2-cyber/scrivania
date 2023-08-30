@@ -111,11 +111,11 @@ class _HomeState extends State<Home> {
                 fillColor: Colors.grey.shade800,
                 filled: true,
                 focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(10),
                   borderSide: const BorderSide(color: Colors.transparent),
                 ),
                 enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(30),
+                  borderRadius: BorderRadius.circular(10),
                   borderSide: const BorderSide(color: Colors.transparent),
                 ),
               ),
