@@ -94,33 +94,6 @@ class _HomeState extends State<Home> {
                     ))
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                const Text(
-                  'Notes',
-                  style: TextStyle(fontSize: 30, color: Colors.white),
-                ),
-                IconButton(
-                    onPressed: () {
-                      setState(() {
-                        filteredNotes = sortNotesByModifiedTime(filteredNotes);
-                      });
-                    },
-                    padding: const EdgeInsets.all(0),
-                    icon: Container(
-                      width: 40,
-                      height: 40,
-                      decoration: BoxDecoration(
-                          color: Colors.grey.shade800.withOpacity(.8),
-                          borderRadius: BorderRadius.circular(10)),
-                      child: const Icon(
-                        Icons.sort,
-                        color: Colors.white,
-                      ),
-                    ))
-              ],
-            ),
             const SizedBox(
               height: 20,
             ),
