@@ -18,14 +18,14 @@ class Scrivania extends StatelessWidget {
         theme: ThemeData.light(
           useMaterial3: true
         ).copyWith(
-            textTheme: GoogleFonts.spaceGroteskTextTheme()
+            textTheme: GoogleFonts.spaceGroteskTextTheme(),
         ),
-        darkTheme: ThemeData.dark(
-          useMaterial3: true,
-        ).copyWith(
-          textTheme: GoogleFonts.spaceGroteskTextTheme()
-        ),
-        themeMode: ThemeMode.system,
+        // darkTheme: ThemeData.dark(
+        //   useMaterial3: true,
+        // ).copyWith(
+        //   textTheme: GoogleFonts.spaceGroteskTextTheme()
+        // ),
+        // themeMode: ThemeMode.system,
         home: const AppSettings(),
       ),
     );
