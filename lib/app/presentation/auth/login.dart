@@ -71,7 +71,7 @@ class _LoginState extends State<Login> {
               const SizedBox(
                 height: 40,
               ),
-              Text(
+              const Text(
                 "Hello welcome",
                 style: TextStyle(
                   fontSize: 18,
@@ -81,7 +81,7 @@ class _LoginState extends State<Login> {
               const SizedBox(
                 height: 10,
               ),
-              Text(
+              const Text(
                 "Enter your credentials to continue",
                 style: TextStyle(
                   fontSize: 18,

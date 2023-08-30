@@ -36,7 +36,7 @@ class _HomeState extends State<Home> {
     return notes;
   }
 
-  getRandomColor() {
+  Color getRandomColor() {
     Random random = Random();
     return Constants.backgroundColors[random.nextInt(Constants.backgroundColors.length)];
   }
@@ -71,7 +71,7 @@ class _HomeState extends State<Home> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Text(
-                  'Notes',
+                  'Scrivania',
                   style: TextStyle(fontSize: 30, color: Colors.white),
                 ),
                 IconButton(
@@ -236,9 +236,10 @@ class _HomeState extends State<Home> {
         },
         elevation: 10,
         backgroundColor: Colors.grey.shade800,
-        child: const Icon(
+        child: Icon(
           Icons.add,
           size: 38,
+          color: Colors.white,
         ),
       ),
     );
