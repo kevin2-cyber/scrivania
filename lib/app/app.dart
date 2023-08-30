@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scrivania/app/presentation/app_settings.dart';
 import 'package:scrivania/app/presentation/home.dart';
 
 class Scrivania extends StatelessWidget {
