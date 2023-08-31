@@ -236,7 +236,7 @@ class _HomeState extends State<Home> {
         },
         elevation: 10,
         backgroundColor: Colors.grey.shade800,
-        child: Icon(
+        child: const Icon(
           Icons.add,
           size: 38,
           color: Colors.white,
