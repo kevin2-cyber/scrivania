@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:scrivania/core/constants.dart';
 
-import '../../model/note.dart';
+import '../../model/entity/note.dart';
 import 'edit.dart';
 
 class Home extends StatefulWidget {

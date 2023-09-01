@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scrivania/model/note.dart';
+import 'package:scrivania/model/entity/note.dart';
 
 class Edit extends StatefulWidget {
   final Note? note;
