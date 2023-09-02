@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 class Constants {
   static const String user = "users";
+  static const String allNotes = "ALL_NOTES";
+  static const String noteDatabase = "note_database";
 
   static List<Color> backgroundColors = [
     const Color(0xFFCCE5FF), // light blue
