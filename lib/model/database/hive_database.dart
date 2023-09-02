@@ -17,7 +17,7 @@ class HiveDatabase {
       List<dynamic> savedNotes = _myBox.get(Constants.allNotes);
       for(int i = 0; i < savedNotes.length; i++) {
         // create individual note
-        Note individualNote = Note(id: savedNotes[i][0], title: savedNotes[i][1], content: savedNotes[i][2], modifiedTime: DateTime.timestamp());
+        Note individualNote = Note(id: savedNotes[i][0], title: savedNotes[i][1], content: savedNotes[i][2], modifiedTime: DateTime.now());
         // add to list
         savedNotesFormatted.add(individualNote);
       }

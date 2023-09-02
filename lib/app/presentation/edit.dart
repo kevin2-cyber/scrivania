@@ -17,10 +17,10 @@ class _EditState extends State<Edit> {
 
   @override
   void initState() {
-    // if (widget.note != null) {
-    //   _titleController = TextEditingController(text: widget.note!.title);
-    //   _contentController = TextEditingController(text: widget.note!.content);
-    // }
+    if (widget.note != null) {
+      _titleController = TextEditingController(text: widget.note!.title);
+      _contentController = TextEditingController(text: widget.note!.content);
+    }
     super.initState();
     Provider.of<NoteProvider>(context, listen: false).initNotes();
   }

@@ -24,7 +24,7 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     Provider.of<NoteProvider>(context, listen: false).initNotes();
-    filteredNotes = sampleNotes;
+    filteredNotes = Provider.of<NoteProvider>(context, listen: false).getAllNotes();
   }
 
   List<Note> sortNotesByModifiedTime(List<Note> notes) {
@@ -46,7 +46,7 @@ class _HomeState extends State<Home> {
 
   void onSearchTextChanged(String searchText) {
     setState(() {
-      filteredNotes = sampleNotes
+      filteredNotes = Provider.of<NoteProvider>(context, listen: false).getAllNotes()
           .where((note) =>
       note.content.toLowerCase().contains(searchText.toLowerCase()) ||
           note.title.toLowerCase().contains(searchText.toLowerCase()))
@@ -57,7 +57,7 @@ class _HomeState extends State<Home> {
   void deleteNote(int index) {
     setState(() {
       Note note = filteredNotes[index];
-      sampleNotes.remove(note);
+      Provider.of<NoteProvider>(context, listen: false).getAllNotes().remove(note);
       filteredNotes.removeAt(index);
     });
   }
@@ -150,10 +150,10 @@ class _HomeState extends State<Home> {
                             if (result != null) {
                               setState(() {
                                 int originalIndex =
-                                sampleNotes.indexOf(filteredNotes[index]);
+                                Provider.of<NoteProvider>(context, listen: false).getAllNotes().indexOf(filteredNotes[index]);
 
-                                sampleNotes[originalIndex] = Note(
-                                    id: sampleNotes[originalIndex].id,
+                                Provider.of<NoteProvider>(context, listen: false).getAllNotes()[originalIndex] = Note(
+                                    id: Provider.of<NoteProvider>(context, listen: false).getAllNotes()[originalIndex].id,
                                     title: result[0],
                                     content: result[1],
                                     modifiedTime: DateTime.now());
@@ -228,12 +228,12 @@ class _HomeState extends State<Home> {
 
           if (result != null) {
             setState(() {
-              sampleNotes.add(Note(
-                  id: sampleNotes.length,
+              Provider.of<NoteProvider>(context, listen: false).getAllNotes().add(Note(
+                  id: Provider.of<NoteProvider>(context, listen: false).getAllNotes().length,
                   title: result[0],
                   content: result[1],
                   modifiedTime: DateTime.now()));
-              filteredNotes = sampleNotes;
+              filteredNotes = Provider.of<NoteProvider>(context, listen: false).getAllNotes();
             });
           }
         },
