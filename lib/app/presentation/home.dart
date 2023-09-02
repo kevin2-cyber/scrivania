@@ -2,7 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 import 'package:scrivania/core/constants.dart';
+import 'package:scrivania/provider/note_provider.dart';
 
 import '../../model/entity/note.dart';
 import 'edit.dart';
@@ -21,6 +23,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
+    Provider.of<NoteProvider>(context, listen: false).initNotes();
     filteredNotes = sampleNotes;
   }
 
