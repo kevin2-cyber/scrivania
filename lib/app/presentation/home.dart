@@ -144,7 +144,7 @@ class _HomeState extends State<Home> {
                               context,
                               MaterialPageRoute(
                                 builder: (BuildContext context) =>
-                                    Edit(note: filteredNotes[index]),
+                                    Edit(note: filteredNotes[index], isNewNote: false,),
                               ),
                             );
                             if (result != null) {
@@ -219,23 +219,25 @@ class _HomeState extends State<Home> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
-          final result = await Navigator.push(
-              context,
-              MaterialPageRoute(
-              builder: (BuildContext context) => const Edit(),
-          ),
-          );
-
-          if (result != null) {
-            setState(() {
-              Provider.of<NoteProvider>(context, listen: false).getAllNotes().add(Note(
-                  id: Provider.of<NoteProvider>(context, listen: false).getAllNotes().length,
-                  title: result[0],
-                  content: result[1],
-                  modifiedTime: DateTime.now()));
-              filteredNotes = Provider.of<NoteProvider>(context, listen: false).getAllNotes();
-            });
-          }
+          // final result = await Navigator.push(
+          //     context,
+          //     MaterialPageRoute(
+          //     builder: (BuildContext context) =>  Edit(note: Note(
+          //       id: Provider.of<NoteProvider>(context, listen: false).getAllNotes().length, title
+          //     ), isNewNote: true,),
+          // ),
+          // );
+          //
+          // if (result != null) {
+          //   setState(() {
+          //     Provider.of<NoteProvider>(context, listen: false).getAllNotes().add(Note(
+          //         id: Provider.of<NoteProvider>(context, listen: false).getAllNotes().length,
+          //         title: result[0],
+          //         content: result[1],
+          //         modifiedTime: DateTime.now()));
+          //     filteredNotes = Provider.of<NoteProvider>(context, listen: false).getAllNotes();
+          //   });
+          // }
         },
         elevation: 10,
         backgroundColor: Colors.grey.shade800,

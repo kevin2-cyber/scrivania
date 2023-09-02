@@ -26,6 +26,7 @@ class HiveDatabase {
       for(int i = 0; i < sampleNotes.length; i++) {
         savedNotesFormatted.add(sampleNotes[i]);
       }
+
     }
     return savedNotesFormatted;
   }
