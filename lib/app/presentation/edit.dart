@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:scrivania/model/note.dart';
+import 'package:provider/provider.dart';
+import 'package:scrivania/model/entity/note.dart';
+import 'package:scrivania/provider/note_provider.dart';
 
 class Edit extends StatefulWidget {
   final Note? note;
@@ -15,13 +17,12 @@ class _EditState extends State<Edit> {
 
   @override
   void initState() {
-    // TODO: implement initState
-    if (widget.note != null) {
-      _titleController = TextEditingController(text: widget.note!.title);
-      _contentController = TextEditingController(text: widget.note!.content);
-    }
-
+    // if (widget.note != null) {
+    //   _titleController = TextEditingController(text: widget.note!.title);
+    //   _contentController = TextEditingController(text: widget.note!.content);
+    // }
     super.initState();
+    Provider.of<NoteProvider>(context, listen: false).initNotes();
   }
 
 
@@ -49,7 +50,7 @@ class _EditState extends State<Edit> {
                       borderRadius: BorderRadius.circular(10)
                   ),
                   child: const Icon(
-                    Icons.arrow_back_ios_new,
+                    Icons.arrow_back,
                     color: Colors.white,
                   ),
                 )

@@ -2,9 +2,11 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 import 'package:scrivania/core/constants.dart';
+import 'package:scrivania/provider/note_provider.dart';
 
-import '../../model/note.dart';
+import '../../model/entity/note.dart';
 import 'edit.dart';
 
 class Home extends StatefulWidget {
@@ -21,6 +23,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
+    Provider.of<NoteProvider>(context, listen: false).initNotes();
     filteredNotes = sampleNotes;
   }
 
@@ -236,7 +239,7 @@ class _HomeState extends State<Home> {
         },
         elevation: 10,
         backgroundColor: Colors.grey.shade800,
-        child: Icon(
+        child: const Icon(
           Icons.add,
           size: 38,
           color: Colors.white,
